@@ -1,0 +1,317 @@
+/* navbar */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px 30px;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 80px;
+}
+.menu a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Untuk mengatur tampilan menu pada layar yang lebih kecil */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+    }
+
+    .menu {
+        display: none;
+        margin-top: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* untuk section 1 */
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF2D8;
+    padding-left: 30px;
+}
+.text {
+    flex: 1; /* Mengisi sebagian besar ruang dalam section */
+}
+.buy{
+    font-size: large;
+    padding: 5px 35px;
+    background-color: #113946;
+    color: #ffffff;
+    height: fit-content;
+    border-radius: 10px;
+}
+.seeall{
+    padding-left: 20px;
+}
+
+.image {
+    flex: 1; /* Mengisi sebagian besar ruang dalam section */
+}
+.image img {
+    width: 100%; /* Lebar gambar setengah dari container */
+    height: auto; /* Menjaga proporsi aspek gambar */
+    max-width: 100%; /* Jika gambar lebih kecil dari 50%, maka maksimumnya adalah ukuran gambar itu sendiri */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h2 {
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 30px;
+}
+@media (max-width: 1000px) {
+    .content-section {
+        flex-direction: column; /* Mengubah tata letak menjadi satu kolom */
+        padding-left: 0;
+    }
+
+    .text, .image {
+        flex: none; /* Menghapus properti flex untuk mengatur lebar maksimal */
+    }
+    .text {
+        text-align: center; /* Pusatkan teks */
+        padding-bottom: 30px;
+    }
+}
+
+/* untuk section 2 */
+.content-section2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF2D8;
+    text-align: center;
+    
+}
+.keyboard, .share{
+    flex: 1; 
+    padding: 100px 0;
+}
+.keyboard h2{
+    font-size: 40px;
+}
+.keyboard p{
+    font-size: 20px;
+}
+.keyboard .fas.fa-keyboard {
+    font-size: 100px;
+}
+
+/* Mengatur ukuran ikon pesawat kertas */
+.share .fas.fa-paper-plane {
+    font-size: 100px;
+}
+.share h2{
+    font-size: 40px;
+}
+.share p{
+    font-size: 20px;
+}
+@media (max-width: 1000px) {
+    .content-section2 {
+        flex-direction: column; /* Mengubah tata letak menjadi satu kolom */
+        padding-left: 0;
+    }
+
+    .keyboard,.share  {
+        flex: none; /* Menghapus properti flex untuk mengatur lebar maksimal */
+        text-align: center; /* Pusatkan teks */
+        padding: 40px 0;
+
+    }
+}
+
+/* section 3 */
+.content-section3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF2D8;
+}
+.text3 {
+    flex: 1; /* Mengisi sebagian besar ruang dalam section */
+    padding-left: 30px;
+
+}
+.demo{
+    font-size: large;
+    padding: 5px 35px;
+    background-color: #113946;
+    color: #ffffff;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.image3 {
+    flex: 1; /* Mengisi sebagian besar ruang dalam section */
+}
+.image3 img {
+    width: 100%; /* Lebar gambar setengah dari container */
+    height: auto; /* Menjaga proporsi aspek gambar */
+    max-width: 100%; /* Jika gambar lebih kecil dari 50%, maka maksimumnya adalah ukuran gambar itu sendiri */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 20px;
+}
+
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF2D8;
+    text-align: center;
+    padding: 30px;
+    flex-direction: column;
+    
+}
+
+.form-gr1{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.form-grup1, .form-grup2, .form-grup3{
+flex: 0 1 49%;
+}
+
+.form-gr1 input{
+    width: 350px;
+    padding-bottom: 25px;
+} 
+.form-gr1 select{
+    padding: 10px;
+}
+
+.form-gr2{
+    width: 100%;
+    text-align: start;
+}
+.form-gr2 textarea{
+ width: 100%;
+ padding-bottom: 40px;
+}
+ 
+.form-gr3{
+    text-align: start;
+    margin-bottom: 20px;
+}
+.sub{
+    font-size: large;
+    padding: 5px 35px;
+    background-color: #113946;
+    color: #ffffff;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.confirmation {
+    width: 50%;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: #86b5c5;
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.confirmation.show {
+    top: 30px !important;
+    transition: .5s;
+}
+
+@media (max-width: 1000px) {
+    .content-section3 {
+        flex-direction: column; /* Mengubah tata letak menjadi satu kolom */
+    }
+
+    .text3, .image3 {
+        flex: none; /* Menghapus properti flex untuk mengatur lebar maksimal */
+    }
+    .image3{
+    padding: 20px;
+}
+    .text3 {
+        text-align: center; /* Pusatkan teks */
+        padding-left: 0;
+        padding-bottom: 30px;
+    }
+}
+
+
+
+/* footer */
+.footer{
+    color: #ffffff;
+    background-color: #113946;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 30px;
+    flex-direction: column;
+}
+.footer .social-icons a{
+    align-items: center;
+    color: white;
+}
+.footer-menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-menu ul {
+    list-style: none;
+    flex: 0 1 45%;
+    text-align: start;
+}
+.footer-menu ul a{
+    color: white;
+}

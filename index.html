@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Tugas hasbi</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/logo.jpg.png" alt="Logo">
+        </div>
+        <div>
+            <button class="menu-toggle" hidden>&#9776;</button> 
+            <ul class="menu">
+                <li><a href="#content-section">Home</a></li>
+                <li><a href="#content-section2">Contact</a></li>
+                <li><a href="#content-section3">About me</a></li>
+                <li><a href="https://docs.google.com/document/d/1zemM0M-a46dCu4kWxboHuNnjBgioXeEq3K3OaOAYSw0/edit?usp=sharing">Docs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- section 1 -->
+    <section class="content-section" id="content-section">
+        <div class="text">
+            <h2>Bring tecnology in your hands</h2>
+            <p>this technology will bring new thinks and experiences to your business and company</p>
+            <a href="#content-section3"><button class="buy">buy</button></a>
+            <a class="seeall" href="#">see all product</a>
+        </div>
+        <div class="image">
+            <img src="img/section1.jpg" alt="Gambar">
+        </div>
+    </section>
+
+    <!-- section 2 -->
+    <section class="content-section2" id="content-section2">
+        <div class="keyboard">
+            <i class="fas fa-keyboard"></i>
+            <h2>easy to implement</h2>
+            <p>easy implement in your company with powerfull platform</p>
+        </div>
+        <div class="share">
+            <i class="fas fa-paper-plane"></i>
+            <h2>optimize system</h2>
+            <p>more than 1000 company using this product</p>
+        </div>
+    </section>
+
+    <!-- section 3 -->
+    <section class="content-section3" id="content-section3">
+        <div class="image3">
+            <img src="img/section3.jpg" alt="Gambar">
+        </div>
+        <div class="text3">
+            <h2>Now, Set up and grow your company</h2>
+            <p>we offer many products that optimize your company, setup now and grow up your business</p>
+            <a href="#content-section"><button class="demo">Demo</button></a>
+        </div>
+    </section>
+
+    <!-- section 4 -->
+    </section>
+    <section class="contact-section"id="contact-section">
+        <div class="form-gr1">
+            <div class="form-grup1">
+                <label for="name">Name :</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-grup2">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-grup3">
+                <label for="role">Role :</label>
+                <select id="role" name="role">
+                    <option value="Pilihan 1">Designer</option>
+                    <option value="Pilihan 2">Student</option>
+                    <option value="Pilihan 3">Teacher</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-gr2">
+            <div class="form-grup4">
+                <label for="message">message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            </div>
+        </div>
+
+        <div class="form-gr3">
+            <h3>i choose to send information about :</h3>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Mrketing</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2">news and updates</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> product updates</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3">none</label><br>
+            <button class="sub" type="submit" onclick="showPopUp()">Kirim</button>
+        </div>
+        <div id="confirmation" class="confirmation" >Pesan Terkirim</div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="footer-menu">
+            <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Terms & Condition</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Change country</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
